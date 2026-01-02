@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: ghcr.io/yoonyeo/msa-portfolio-api-gateway:6ad4ee888c6e9ba4e73f67155677b1245b59a186
+          image: ghcr.io/yoonyeo/msa-portfolio-api-gateway:d9a12a1b0dee950d714ffa240929cf494a0a0281
           imagePullPolicy: Always
           env:
             - name: SPRING_PROFILES_ACTIVE
