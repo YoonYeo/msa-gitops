@@ -1,18 +1,18 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: api-gateway-ingress
-  namespace: gateway
+  name: argocd-server-ingress
+  namespace: argocd
 spec:
   ingressClassName: traefik
   rules:
-    - host: api.msa.local
+    - host: argocd.msa.local
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: api-gateway
+                name: argocd-server
                 port:
                   number: 80
