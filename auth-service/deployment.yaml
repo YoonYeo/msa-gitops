@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: auth-service
-          image: ghcr.io/yoonyeo/msa-portfolio-auth-service:0bb7c65a5f1814329817841806218edf97c74351
+          image: ghcr.io/yoonyeo/msa-portfolio-auth-service:9d656d9335196712c657be5b7406b3a8ae76828b
           imagePullPolicy: Always
           env:
             - name: SPRING_PROFILES_ACTIVE
